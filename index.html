@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Course: SENG 513 -->
+<!-- Date: OCT 23, 2023 -->
+<!-- Assignment 2 Part One -->
+<!-- Name: Achraf Abdelrhafour -->
+<!-- UCID: 30022366 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Glass Bridge Game</title>
+</head>
+<body>
+    <header>
+        <h1>Glass Bridge Game</h1>
+        <p>Watch your step, it may be your last...</p>
+    </header>
+    <div class="game-setup">
+        <label for="playerCount">Number of players:</label>
+        <input type="number" id="playerCount" min="1" max="10">
+        
+        <label for="bridgeLength">Length of bridge:</label>
+        <input type="number" id="bridgeLength" min="1" max="10">
+        
+        <button onclick="startGame()">Start Game</button>
+    </div>
+    <div class="timer">
+        Time left: <span id="timeLeft">60</span> seconds
+    </div>
+    <div class="game-area">
+        <div class="start-area"></div> <!-- Starting Area -->
+        <div class="bridge"></div>
+        <div class="finish-area"></div> <!-- Finishing Area -->
+        <div class="player-info">
+            <div>
+                Current Player: <span id="currentPlayer"></span>
+            </div>
+            <button onclick="move('left')">Step on Left Panel</button>
+            <button onclick="move('right')">Step on Right Panel</button>
+            <button onclick="skipTurn()">Skip Turn</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
