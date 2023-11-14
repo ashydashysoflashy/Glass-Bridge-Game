@@ -1,6 +1,6 @@
 /* Course: SENG 513 */
-/* Date: OCT 23, 2023 */
-/* Assignment 2 Part One */
+/* Date: NOV 13, 2023 */
+/* Assignment 2 Part Two */
 /* Name: Achraf Abdelrhafour */
 /* UCID: 30022366 */
 
@@ -30,13 +30,17 @@ h1 {
     font-size: 2.5em;
 }
 
+h2 {
+    color:black;
+}
+
 p {
     margin-top: 8px;
     font-weight: 300;
     opacity: 0.9;
 }
 
-.game-setup, .player-info {
+.game-setup, .player-info, .dead-players, .alive-players {
     background-color: #fff;
     border-radius: 12px;
     padding: 20px;
